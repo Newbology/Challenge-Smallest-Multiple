@@ -1,3 +1,4 @@
+"use strict"
 /**
  * Build a function that finds the smallest positive number that is evenly
  * divisible by all of the numbers starting from 1 up to the value passed into your function.

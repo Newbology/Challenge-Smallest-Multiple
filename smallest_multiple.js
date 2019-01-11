@@ -10,21 +10,21 @@
 module.exports = function(ceiling) {
   // do work here
 
-  let i = ceiling;
+  let num = ceiling;
 
-  // if not 0 then i++
-  function checkI(i) {
+  // if not 0 then num++
+  function findSmallest(num) {
     for (var j = 1; j <= ceiling; j++) {
       // loop 20 % i   where i goes from 1 to 20  must % = 0
-      if (i % j !== 0) {
+      if (num % j !== 0) {
         return false;
       }
     }
     return true;
   }
   // break loop when n all are 0
-  while (!checkI(i)) {
-    i += ceiling;
+  while (!findSmallest(num)) {
+    num += ceiling;
   }
-  return i;
+  return num;
 };
